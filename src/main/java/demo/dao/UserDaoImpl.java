@@ -1,4 +1,4 @@
-package demo.DAO;
+package demo.dao;
 
 import demo.model.User;
 import jakarta.persistence.PersistenceContext;
@@ -8,13 +8,10 @@ import jakarta.persistence.EntityManager;
 import java.util.List;
 
 @Repository
-public class UserDAOImpl implements UserDAO {
+public class UserDaoImpl implements UserDao {
 
     @PersistenceContext
     private EntityManager entityManager;
-
-
-
 
     @Override
     @Transactional
